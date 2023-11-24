@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen flex items-center justify-center;
+
+  background: #ff9966;
+  background: -webkit-linear-gradient(to right, #ff9966, #ff5e62);
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+.search {
+  @apply w-[45px] relative duration-500 ease-linear overflow-hidden;
+}
+.search.active {
+  @apply w-[270px] duration-500 ease-linear;
+}
+
+#searchBar {
+  @apply w-full pl-4 pr-4 h-[40px] rounded-lg;
+}
+
+.btn {
+  @apply absolute right-[6px] top-1 w-[32px] h-[32px] rounded-lg  bg-white;
+}
+
+.btn svg:hover {
+  @apply fill-[#60565cef];
+}
